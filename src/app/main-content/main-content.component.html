@@ -1,0 +1,41 @@
+<!-- Resources -->
+<div class="content" role="main">
+
+    <h2>Resources</h2>
+    <p>Here are some links to help you get started:</p>
+
+    <div class="card-container">
+
+        <app-card [text]="'Learn Angular'" [icon]="'school'"></app-card>
+
+        <app-card [text]="'CLI Documentation'" [icon]="'code'"></app-card>
+
+        <app-card [text]="'Angular Blog'" [icon]="'whatshot'"></app-card>
+
+    </div>
+
+    <!-- Next Steps -->
+    <h2>Next Steps</h2>
+    <p>What do you want to do next with your app?</p>
+
+    <input type="hidden" #selection>
+
+    <div class="card-container">
+
+        <app-card [type]="'small'" [selectionvalue]="'component'" [text]="'New Component'" [icon]="'add'"
+            (update)="updateSelection($event)"></app-card>
+
+        <app-card [type]="'small'" [selectionvalue]="'material'" [text]="'Angular Material'" [icon]="'add'"
+            (update)="updateSelection($event)"></app-card>
+
+        <app-card [type]="'small'" [selectionvalue]="'dependency'" [text]="'Add Dependency'" [icon]="'add'"
+            (update)="updateSelection($event)"></app-card>
+
+        <app-card [type]="'small'" [selectionvalue]="'test'" [text]="'Run and Watch Tests'" [icon]="'add'"
+            (update)="updateSelection($event)"></app-card>
+
+        <app-card [type]="'small'" [selectionvalue]="'build'" [text]="'Build for Production'" [icon]="'add'"
+            (update)="updateSelection($event)"></app-card>
+
+    </div>
+</div>
